@@ -1,23 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+/**{
+    background-color: black;
+
+}*/
+@media screen and (min-width: 375px)
+body {
+    width: 100%;
+}
+
+@media screen and (max-width: 1440px)
+body {
+    width: 100%;
+}
 
 body{
     background-color: #f2f2f2;
     Font size: 15px;
-    min-height: 100vh;
+    min-height: 90vh;
+    
 }
 
 main{
     margin: auto;
     align-items: center;
     justify-content: center;
-    width: 50%;
+    width: 65%;
     /*padding: 0.8em;*/
 }
 
 h3{
     font-family: 'Big Shoulders Display'; 
-    font-size: 25px;   
+    font-size: 30px;   
     font-weight: 700;
     color: hsl(0, 0%, 95%);
 }
@@ -25,34 +39,47 @@ h3{
 p{
     font-family: 'Lexend Deca', sans-serif;
     font-weight: 400;
-    font-size: 10px;
+    font-size: 15px;
     color: hsla(0, 0%, 100%, 0.75);
 }
 
-img{
-    margin-bottom: 25px;
-}
-
-button{
+.first-content button{
     border-radius: 2rem;
-    border: 2px solid hsl(0, 0%, 95%);
+    color: hsl(31, 77%, 52%);
     padding: 0.8em;
+    border: 2px solid hsl(0, 0%, 95%);
     width: 65%;
     margin-top: 6em;
+    margin-bottom: 2em;
     font-family: 'Lexend Deca', sans-serif;
     font-weight: 400;
-    font-size: 10px;
+    font-size: 15px;
 }
 
-button{
+.second-content button{
     border-radius: 2rem;
-    border: 2px solid hsl(0, 0%, 95%);
+    color: hsl(184, 100%, 22%);
     padding: 0.8em;
+    border: 2px solid hsl(0, 0%, 95%);
     width: 65%;
     margin-top: 6em;
+    margin-bottom: 2em;
     font-family: 'Lexend Deca', sans-serif;
     font-weight: 400;
-    font-size: 10px;
+    font-size: 15px;
+}
+
+.third-content button{
+    border-radius: 2rem;
+    color: hwb(179 0% 74%); 
+    padding: 0.8em;
+    border: 2px solid hsl(0, 0%, 95%);
+    width: 65%;
+    margin-top: 6em;
+    margin-bottom: 2em;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
 }
 
 button:hover{
@@ -65,14 +92,19 @@ button:hover{
     background-color: white;
     display:flex;
     flex-direction: row;
-    Border-radius:5px;
+    Border-radius: 5px;
     overflow: hidden;
-    padding: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+    padding-right: 80px;
 }
 
 .top-content .first-content{
     background-color: hsl(31, 77%, 52%);
     padding: 2em;
+    Border-top-left-radius: 5px;
+    Border-bottom-left-radius: 5px;
 }
 .top-content .second-content{
     background-color:hsl(184, 100%, 22%);
@@ -82,4 +114,6 @@ button:hover{
 .top-content .third-content{
     background-color:hsl(179, 100%, 13%); 
     padding: 2em;  
+    Border-top-right-radius: 5px;
+    Border-bottom-right-radius: 5px;
 }
