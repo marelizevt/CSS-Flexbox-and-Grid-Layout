@@ -5,25 +5,23 @@
 
 body{
     background-color: #1a1c28;
-    min-height: 100vh;
+    display: flex;
+    place-items: center;
+    min-height: 50vh;
 }
 
 main{
     display: grid;
     grid-template-areas: 
-    'a a b'
-    'c c d'
-    'c c e'
+    'a a a a b b'
+    'c c d d d d'
+    'c c e e e e'
     ;
     gap: 10px;
-    width: 50%;
+    width: 30%;
     margin: auto;
-    padding: 80px;
-}
-
-main div{
-    padding: 2em;
-    text-align: center;
+    padding:80px;
+    grid-template-rows: 160px 80px 80px;
 }
 
 .item-a{
