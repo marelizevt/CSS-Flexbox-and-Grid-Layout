@@ -21,7 +21,6 @@ main{
     width: 30%;
     margin: auto;
     padding:80px;
-    grid-template-columns: 30 30 30;
     grid-template-rows: 160px 80px 80px;
 }
 
